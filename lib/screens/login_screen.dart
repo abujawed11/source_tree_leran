@@ -15,8 +15,8 @@ class _LoginScreenState extends State<LoginScreen> {
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Colors.black, Colors.lightBlueAccent],
+            end: Alignment.topCenter,
+            colors: [Colors.blue, Colors.lightBlueAccent],
           ),
         ),
         child: Center(
@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Padding(
                   padding: const EdgeInsets.all(24.0),
                   child: Column(
-                    mainAxisSize: MainAxisSize.min,
+                    mainAxisSize: MainAxisSize.max,
                     children: [
                       const SizedBox(height: 16),
                       const Text(
@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         style: TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.bold,
-                          color: Colors.blue,
+                          color: Colors.black,
                         ),
                       ),
                       // const SizedBox(height: 24),
@@ -56,11 +56,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       //   icon: Icons.lock,
                       //   isPassword: true,
                       // ),
-                      Container(child: const SizedBox(height: 24)),
+                      Container(child: const SizedBox(height: 25)),
                       SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: _isLoading ? null : _login,
+                          onPressed: _isLoading ? null : _looo,
                           style: ElevatedButton.styleFrom(
                             padding: const EdgeInsets.symmetric(vertical: 16),
                             shape: RoundedRectangleBorder(
@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           // ),
                         // ),
                       // ),
-                      child: SizedBox(height: 16),
+                      child: SizedBox(height: 19),
                       widget(
                         child: Row(
                           children: [
@@ -103,7 +103,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 8),
+                       SizedBox(height: 8),
                     ],
                   ),
                 ),
